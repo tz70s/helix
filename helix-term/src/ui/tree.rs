@@ -792,9 +792,9 @@ fn render_tree<T: TreeViewItem>(
     let indent = if level > 0 {
         let indicator = if tree.item().is_parent() {
             if tree.is_opened {
-                "⏷"
+                "\u{25bc}"
             } else {
-                "⏵"
+                "\u{25b6}"
             }
         } else {
             " "
